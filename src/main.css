@@ -1,0 +1,231 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: #293c4b;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+}
+/*#root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}*/
+.collection-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.collection-child {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.collection-parent {
+  overflow: hidden;
+  height: 70px;
+  display: inline-block;
+  line-height: 70px;
+  text-align: center;
+  margin-top: 0px;
+  cursor: pointer;
+  text-shadow: 0px 0px 10px white;
+}
+
+.collection-parent:hover .collection-bg,
+.collection-parent:focus .collection-bg {
+  color: white;
+  text-shadow: 0px 0px 10px black;
+  text-transform: uppercase;
+  transform: scale(1.2);
+  transition: all 0.2s;
+}
+
+.collection-bg:hover .collection-child,
+.collection-bg:focus .collection-child {
+  background-color: rgba(0,0,0,0);
+  transition: all 0.1s;
+}
+
+.splash {
+  text-align: center;
+}
+
+.header {
+  display: block;
+  position: relative;
+  top: -40px;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+  background-color: #eee;
+}
+
+.header-links a, .link {
+  color: black;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px white;
+  transition: all 0.2s;
+}
+
+.header-links:hover a, .header-links:focus a,
+.link:hover, .link:focus {
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px black;
+}
+.mobile-header-name {
+  display: inline-block;
+  width: 59%;
+  padding-left: 20px;
+}
+
+.mobile-header-name h2 {
+  font-size: 1.6rem;
+}
+
+.headerbutton {
+  display: inline-block;
+  text-align: right;
+  margin: 17px 5px 0;
+  float: right;
+}
+
+.h1button {
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.collectionTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.imageCell {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+}
+
+.imageCellParent {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.imageCellParent:hover .imageCell, 
+.imageCellParent:focus .imageCell {
+  transform: scale(0.9);
+}
+
+.modalNavParentL {
+  text-align: right;
+  display: inline-block;
+  width: 30%;
+}
+
+.modalNavParentR {
+  text-align: left;
+  display: inline-block;
+  width: 30%;
+}
+
+.prevImg {
+  position: absolute;
+  right: 60vw;
+  bottom: 0;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.nextImg {
+  position: absolute;
+  left: 60vw;
+  bottom: 0;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.modal {
+  padding-top: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.modalbutton {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  background-color: #666;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.modalbutton:hover, .modalbutton:focus {
+  background-color: #ccc;
+}
+
+.h1button:hover, .h1button:focus {
+  background-color: #666;
+}
+
+.modalcontent {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-list {
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 50px;
+}
+
+.modal-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.modalimg {
+  position: relative;
+  /* width: 100%; */
+  text-align: center;
+  margin: 85px auto auto auto;
+}
+
+.photomodal {
+  text-align: center;
+}
+
+.header-links {
+  display: inline-block;
+  text-align: center;
+}
