@@ -162,7 +162,7 @@ makeImgList head len =
     let
         indecies = List.map toString <| List.range 1 len
     in
-        List.map (\x -> "https://s3.amazonaws.com/jmswllttphotos/" ++ head ++ "-" ++ x ++ ".jpg") indecies
+        List.map (\x -> "https://s3.amazonaws.com/jmswllttphotos/" ++ head ++ "-" ++ x) indecies
 
 collections : List Collection
 collections =
@@ -219,7 +219,15 @@ collections =
 
 u : String -> String
 u s =
-    "url(" ++ s ++ ")"
+    "url(" ++ s ++ ".jpg)"
+
+thumb : String -> String
+thumb s =
+  s ++ "-thumb" |> u -- literally everywhere we use `u`
+                     -- EXCEPT the main modal, use this
+                     -- once we have thumbs uploaded
+                     -- then think about renaming `u` because
+                     -- that name fucking sucks
 
 responsiveWidth : Model -> Attribute msg
 responsiveWidth model =
