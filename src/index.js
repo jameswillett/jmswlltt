@@ -6,4 +6,7 @@ Main.embed(document.getElementById('root'), {
   width: window.innerWidth,
   height: window.innerHeight,
 });
+
+document.title = 'Jms Wlltt';
+
 registerServiceWorker();
