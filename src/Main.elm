@@ -25,7 +25,7 @@ type alias Model =
 
 type alias Flags =
     { width : Int
-    , height : Int
+    -- , height : Int
     }
 
 initialModel : Flags -> Route -> Model
